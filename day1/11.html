@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>表格标签</title>
+</head>
+
+<!--
+    外边距cellspacing就是单元格和单元格之间的距离，我们称之为外边距，默认情况下单元格和单元格之间的外边距的距离是2px
+    内边距cellpadding是单元格的边框和文字之间的间隙，我们称为内边距，默认情况下内边距是1px
+-->
+<body>
+    <table border="1" align="center" width="500px" height="300px" cellspacing="2px" cellpadding=“20px”>
+        <tr valign=“bottom”>
+            <td width="50px" height="50px">1</td>
+            <td>jusene</td>
+        </tr>
+        <tr align="center">
+            <td align="right">2</td>
+            <td>zgx</td>
+        </tr>
+    </table>
+
+    <!--细线表格-->
+    <table  bgcolor="black" cellspacing="1px">
+        <th bgcolor="white">id</th>
+        <tr bgcolor="white">
+            <td>1.1</td>
+        </tr>
+    </table>
+
+    
+    <table align="center" bgcolor="black" cellspacing="1px" width="800px"> 
+        <!--caption必须写在table表格中才有效 相对于表格剧中-->
+        <caption>
+            <h1>今日小说</h1>
+        </caption>
+        <tr bgcolor="#a9a9a9" >
+            <th>排名</th>
+            <th>关键字</th>
+            <th>趋势</th>
+            <th>今日搜索</th>
+            <th>最近七日</th>
+            <th>相关链接</th>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>1</td>
+            <td>狂神</td>
+            <td><img src="image/1.png" alt="not found"></td>
+            <td>2121</td>
+            <td>2131</td>
+            <td>
+                <a href="#">1</a>
+                <a href="#">2</a>
+            </td>
+        </tr>
+    </table>
+
+    <!--表格完整标签-->
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--单元格合并-->
+    <table border="1" width="900px", height="100px">
+        <caption>单元格合并</caption>
+        <tr>
+            <td colspan="2"></td>
+            
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
