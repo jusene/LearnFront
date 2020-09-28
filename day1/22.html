@@ -14,17 +14,111 @@
         <input type="text" name="firstname"><br>
         Last name:
         <input type="text" name="lastname"><br>
+
         <select name="cars">
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
             <option value="fiat" selected>Fiat</option>
             <option value="audi">Audi</option>
         </select>
+
         <textarea name="message" rows="10" cols="30">
             textarea
         </textarea>
+
         <button type="button" onclick="alert('Hello')">Click me</button> 
+
+        <input type="password" name="password"><br>
+
     </form>
+    <form action="test">
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--单选框-->
+    <form>
+        <input type="radio" name="sex" value="male" checked>Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+        <button type="button" name="ok">ok</button>
+    </form>
+
+    <!--复选框-->
+    <form>
+        <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+        <input type="checkbox" name="vehicle" value="Car">I habe a car<br>
+        <input type="button" onclick="alert('hello')" value="click me">
+    </form>
+
+    <!--html5-->
+    <form action="h5" method="GET">
+        <input type="color" name="color"><br>
+        <input type="date" name="startdate"><br>
+        <input type="time" name="starttime"><br>
+        <input type="datetime-local" name="datetime"><br>
+        <input type="email" name="email"><br>
+        <input type="month" name="month" required><br>
+        <input type="number" name="number" max="2" min="-1"><br>
+        <input type="range" name="range" max="100" min="1"><br>
+        <input type="search" name="search"><br>
+        <input type="url" name="url"><br>
+        <input type="week" name="week" disabled><br>
+        <input type="submit" value="提交">
+    </form>
+
+    <!--资源限制-->
+    <table border="1" width="500px" cellspacing="1px">
+        <caption>输入限制</caption>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td>规定输入字段应该被禁用</td>
+        </tr>
+        <tr>
+            <td>max</td>
+            <td>规定输入字段的最大值</td>
+        </tr>
+        <tr>
+            <td>maxlength</td>
+            <td>规定输入字段的最大字符数</td>
+        </tr>
+        <tr>
+            <td>min</td>
+            <td>规定输入字段的最小值</td>
+        </tr>
+        <tr>
+            <td>pattern</td>
+            <td>规定通过其检查输入值的正则表达式</td>
+        </tr>
+        <tr>
+            <td>readonly</td>
+            <td>规定输入字段为只读（无法修改）</td>
+        </tr>
+        <tr>
+            <td>required</td>
+            <td>规定输入字段是必需的（必需填写）</td>
+        </tr>
+        <tr>
+            <td>size</td>
+            <td>规定输入字段的宽度（以字符计）</td>
+        </tr>
+        <tr>
+            <td>step</td>
+            <td>规定输入字段的合法数字间隔</td>
+        </tr>
+        <tr>
+            <td>value</td>
+            <td>规定输入字段的默认值</td>
+        </tr>
+    </table>
 </body>
 
 </html>
