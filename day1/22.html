@@ -119,6 +119,56 @@
             <td>规定输入字段的默认值</td>
         </tr>
     </table>
+
+    <!--html5属性-->
+    <table border="1" width="500px" cellspacing="1px">
+        <caption>html5 input 增加属性</caption>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+
+        <tr>
+            <td>autocomplete</td>
+            <td>规定表单或输入字段是否应该自动完成，适用于text，search，url，tel，email，password，datepickers，range，color</td>
+        </tr>
+
+        <tr>
+            <td>novalidate</td>
+            <td>novalidate属性属于form属性，在提交表单时不对表单数据进行验证</td>
+        </tr>
+
+        <tr>
+            <td>autofocus</td>
+            <td>autofocus是布尔属性，规定加载时应该自动获取焦点</td>
+        </tr>
+
+        <tr>
+            <td>form</td>
+            <td>form属性规定所属一个或多个表单</td>
+        </tr>
+
+        
+    </table>
+
+    <!--autocomplete-->
+    <form action="action" autocomplete="on">
+        name:<input type="text" name="name"><br>
+        email:<input type="email" name="email" autocomplete="off">
+    </form>
+
+    <!--novalidate-->
+    <form action="action" novalidate>
+        name:<input type="text" name="name" autofocus="on"><br>
+        email:<input type="email" name="email"><br>
+        <button type="submit" name="submit">submit</button>
+    </form>
+
+    <!--form-->
+    <form action="action" id="form1">
+        name:<input type="text" name="name"><br>
+    </form>
+    email:<input type="email" name="email" form="form1" >
 </body>
 
 </html>
